@@ -1,8 +1,5 @@
 
 
-console.log("HOLA");
-
-
 //Se permite solo mayores de 18
 //MENSAJE DE BIENVENIDA SOLO SI ES MAYOR DE 18
 
@@ -17,6 +14,10 @@ if (edad_usuario>=18){
 else{
     console.log("No puede ingresar");
 }
+
+
+
+
 
 
 //compra al carrito
