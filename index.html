@@ -8,12 +8,7 @@
     <meta name="keywords"  content="VENTAALCHOL,BEBIDASALCHOOLICAS">
     <link rel="stylesheet" href="./css/style.css" />
         <!-- Bootstrap CSS -->
-		<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-		crossorigin="anonymous"
-	  />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <title>Bienvenido!</title>
 </head>
@@ -24,7 +19,10 @@
             <ul id="menu">
                 <li class="bottonMenu"><a href="./index.html">Home</a></li>
                 <li class="bottonMenu"><a href="./pages/contacto.html">Contacto</a></li>
-                <li class="bottonMenu"><a href="./pages/carrito.html">Carrito</a></li>
+
+                </ul>
+
+                </div>
             </ul>
         </section>
         </nav>
@@ -56,7 +54,7 @@
                             <h1>Amundsen</h1> 
                             <p>Sabor afrutado, ligeramente lupulado con claro amargor, notas de piña, hierbas frescas, nectarina y piel de cítricos. Se sirve a 8-10 °C como bebida de acompañamiento, con sabrosos platos vegetarianos o platos ligeros de carne.</p>
                             <p>$300</p> 
-                            <p><button class="button">Comprar</button></p>
+                           
                           </div>
                         </div>
                   </div>
@@ -71,7 +69,7 @@
                         <h1>Cape Point</h1> 
                         <p>Sabor a malta con toques de pan crujiente, flores de trébol, albaricoque y pomelo. Se sirve a 8-10°C como bebida de acompañamiento, con platos vegetarianos o con platos de pescado o marisco, preferiblemente con un condimento picante.</p>
                         <p>$450</p> 
-                        <p><button class="button">Comprar</button></p>
+                      
                       </div>
                     </div>
               </div>
@@ -86,15 +84,28 @@
                     <h1>Collective Arts</h1> 
                     <p>Sabor matizado, aromático a lúpulo con claro amargor y ligero dulzor, toques de mango, maracuyá, resina de pino, piña deshidratada y pomelo. Servir a 10-12°C como bebida de acompañamiento o con platos de cerdo, cordero o ternera, preferiblemente a la parrilla.</p>
                     <p>$360</p> 
-                    <p><button class="button">Comprar</button></p>
+                   
                   </div>
                 </div>
-          </div>
-          
-    </div>
-
-
-        </div>
+                      </div>
+                      <br>
+                      
+                      <div class="container">
+                        <div class="row">
+                           
+                            <main id="items" class="col-sm-8 row"></main>
+                            <!-- Carrito -->
+                            <aside class="col-sm-4">
+                                <h2>Carrito</h2>
+                                <!-- Elementos del carrito -->
+                                <ul id="carrito" class="list-group"></ul>
+                                <hr>
+                                <!-- Precio total -->
+                                <p class="text-right">Total: <span id="total"></span>$peso;</p>
+                                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                            </aside>
+                        </div>
+                    </div>
         </section>
         <footer>
 
