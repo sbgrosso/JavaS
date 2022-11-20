@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VentaAlchol,Bebidas">
+    <meta name="keywords"  content="VENTAALCHOL,BEBIDASALCHOOLICAS">
+    <link rel="stylesheet" href="./css/style.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Birrita Fresk</title>
+</head>
+<body>
+    <header class="menuHome">
+        <nav>
+            <section>
+              
+            <ul id="menu">
+                <li class="bottonMenu"><a href="./homepage.html">Home</a></li>
+                <li class="bottonMenu"><a href="./pages/contacto.html">Contacto</a></li>
+                <li class="bottonMenu"><a href="./pages/aboutus.html">About Us</a></li>
+                <img class="logo" src="./images/ilustracion-taza-cerveza-sobre-fondo-blanco-elemento-logotipo-etiqueta-emblema-signo-ilustracion_124137-1356.webp" alt="logo">
+                
+
+                </ul>
+
+                </div>
+            </ul>
+        </section>
+        </nav>
+    </header>
+    <main class="background">
+    
+<div class="container">
+  <section id="video" class="videoContainer">
+    <video src="./images/latavideo.mp4" autoplay muted loop></video>
+  </section>
+
+<div class="content">
+ <h1>Compra tu Birrita preferida!</h1>
+ <p>Una pequeña palabra con un gran significado. Una bebida antigua que encuentra diferentes expresiones en diferentes estilos. Tradición y afán de experimentación en una misma copa. 
+  Luego de las Destacadas del mes, tenes el carrito para poder adquerir la birra que quieras!
+ </p>
+</div>
+</div>
+
+
+  </section>
+   
+        <section>
+            <!--cervezas-->
+            <h1 class="titulo">Destacadas</h1>
+            <div class="bebidas">
+
+</div>
+            </div>
+        <div style="display:flex; flex-direction:row; justify-content:space-evenly;">
+                <div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./images/9356444_400.png" alt="Amundsen" style="height:300px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Amundsen</h1> 
+                            <p>Sabor afrutado, ligeramente lupulado con claro amargor, notas de piña, hierbas frescas, nectarina y piel de cítricos. Se sirve a 8-10 °C como bebida de acompañamiento, con sabrosos platos vegetarianos o platos ligeros de carne.</p>
+                            <p>$300</p> 
+                           
+                          </div>
+                        </div>
+                  </div>
+            </div>
+            <div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="./images/26391691_400.png" alt="CapePoint" style="height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Cape Point</h1> 
+                        <p>Sabor a malta con toques de pan crujiente, flores de trébol, albaricoque y pomelo. Se sirve a 8-10°C como bebida de acompañamiento, con platos vegetarianos o con platos de pescado o marisco, preferiblemente con un condimento picante.</p>
+                        <p>$450</p> 
+                      
+                      </div>
+                    </div>
+              </div>
+        </div>
+        <div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/9665327_400.png" alt="CArts" style="height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Collective Arts</h1> 
+                    <p>Sabor matizado, aromático a lúpulo con claro amargor y ligero dulzor, toques de mango, maracuyá, resina de pino, piña deshidratada y pomelo. Servir a 10-12°C como bebida de acompañamiento o con platos de cerdo, cordero o ternera, preferiblemente a la parrilla.</p>
+                    <p>$360</p> 
+                  </div>
+                </div>
+              </div>
+        </div>
+   
+          </section>
+
+          <div class="container">
+            <section id="video" class="videoContainer">
+              <video src="./images/fabrica.mp4" autoplay muted loop></video>
+            </section>
+          </div>
+          <br>
+      <section>
+                      <div class="container">
+                        <div class="row">
+                           
+                            <main id="items" class="col-sm-8 row"></main>
+                            <!-- Carrito -->
+                            <aside class="col-sm-4">
+                                <h2 class="carritotitulo">Carrito</h2>
+                                <!-- Elementos del carrito -->
+                                <ul id="carrito" class="list-group"></ul>
+                                <hr>
+                                <!-- Precio total -->
+                                <p class="text-right" class="carritotitulo">Total: <span class="carritotitulo" id="total"></span>$pesos;</p>
+                                <button id="boton-vaciar" class="btn btn-warning">Vaciar</button>
+                                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="160571000-969b0551-f001-42f6-9545-db642f2ad3ff" data-source="button">
+</script>
+                      
+                            </aside>
+                        </div>
+                    </div>
+        </section>
+        <footer>
+
+        </footer>
+    </main>
+    <script src="./Js/main.js"></script>
+    <script type="text/javascript" src="./Js/body.js"></script>
+</body>
+</html>

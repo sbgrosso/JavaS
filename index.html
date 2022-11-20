@@ -8,110 +8,32 @@
     <meta name="keywords"  content="VENTAALCHOL,BEBIDASALCHOOLICAS">
     <link rel="stylesheet" href="./css/style.css" />
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-    <title>Bienvenido!</title>
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous"/>
+    <title>Debe ser mayor de edad para ingresar</title>
 </head>
+
 <body>
     <header class="menuHome">
         <nav>
             <section>
             <ul id="menu">
-                <li class="bottonMenu"><a href="./index.html">Home</a></li>
-                <li class="bottonMenu"><a href="./pages/contacto.html">Contacto</a></li>
-
-                </ul>
-
-                </div>
+            <img class="logo" src="./images/ilustracion-taza-cerveza-sobre-fondo-blanco-elemento-logotipo-etiqueta-emblema-signo-ilustracion_124137-1356.webp" alt="logo">
             </ul>
+            
         </section>
-        </nav>
-    </header>
-    <main>
-    
-<div class="container">
-<img src="./images/pexels-alex-knight-2599245.jpg" alt="Beer" style="width:100%;">
-<div class="content">
- <h1>Compra tu Birrita preferida!</h1>
- <p>Una pequeña palabra con un gran significado. Una bebida antigua que encuentra diferentes expresiones en diferentes estilos. Tradición y afán de experimentación en una misma copa. </p>
-</div>
-</div>
-   
-        <section>
-            <!--cervezas-->
-            <div class="bebidas">
+    </nav>
+</header>
 
-</div>
-            </div>
-        <div style="display:flex; flex-direction:row; justify-content:space-evenly;">
-                <div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="./images/9356444_400.png" alt="Amundsen" style="height:300px;">
-                          </div>
-                          <div class="flip-card-back">
-                            <h1>Amundsen</h1> 
-                            <p>Sabor afrutado, ligeramente lupulado con claro amargor, notas de piña, hierbas frescas, nectarina y piel de cítricos. Se sirve a 8-10 °C como bebida de acompañamiento, con sabrosos platos vegetarianos o platos ligeros de carne.</p>
-                            <p>$300</p> 
-                           
-                          </div>
-                        </div>
-                  </div>
-            </div>
-            <div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="./images/26391691_400.png" alt="CapePoint" style="height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Cape Point</h1> 
-                        <p>Sabor a malta con toques de pan crujiente, flores de trébol, albaricoque y pomelo. Se sirve a 8-10°C como bebida de acompañamiento, con platos vegetarianos o con platos de pescado o marisco, preferiblemente con un condimento picante.</p>
-                        <p>$450</p> 
-                      
-                      </div>
-                    </div>
-              </div>
-        </div>
-        <div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="./images/9665327_400.png" alt="CArts" style="height:300px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>Collective Arts</h1> 
-                    <p>Sabor matizado, aromático a lúpulo con claro amargor y ligero dulzor, toques de mango, maracuyá, resina de pino, piña deshidratada y pomelo. Servir a 10-12°C como bebida de acompañamiento o con platos de cerdo, cordero o ternera, preferiblemente a la parrilla.</p>
-                    <p>$360</p> 
-                   
-                  </div>
-                </div>
-                      </div>
-                      <br>
-                      
-                      <div class="container">
-                        <div class="row">
-                           
-                            <main id="items" class="col-sm-8 row"></main>
-                            <!-- Carrito -->
-                            <aside class="col-sm-4">
-                                <h2>Carrito</h2>
-                                <!-- Elementos del carrito -->
-                                <ul id="carrito" class="list-group"></ul>
-                                <hr>
-                                <!-- Precio total -->
-                                <p class="text-right">Total: <span id="total"></span>$peso;</p>
-                                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                            </aside>
-                        </div>
-                    </div>
-        </section>
-        <footer>
-
-        </footer>
-    </main>
-    <script src="./Js/main.js"></script>
-    <script type="text/javascript" src="./Js/body.js"></script>
+    <div class="container">
+    <label for="edad">Edad:</label><br>
+    <input type="text" id="edad" name="edad">
+    <br>
+    <button type="button" onclick="edad_ingreso()">Ingresa!</button>
+ </div>
+<script src="./Js/main.js"></script>
 </body>
 </html>

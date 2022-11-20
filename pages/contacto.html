@@ -21,26 +21,30 @@
         <nav>
             <section>
             <ul id="menu">
-                <li class="bottonMenu"><a href="../index.html">Home</a></li>
+                <li class="bottonMenu"><a href="../homepage.html">Home</a></li>
                 <li class="bottonMenu"><a href="../pages/contacto.html">Contacto</a></li>
-                <li class="bottonMenu"><a href="../pages/carrito.html">Carrito</a></li>
+                <li class="bottonMenu"><a href="../pages/aboutus.html">About Us</a></li>
+                <img class="logo" src="../images/ilustracion-taza-cerveza-sobre-fondo-blanco-elemento-logotipo-etiqueta-emblema-signo-ilustracion_124137-1356.webp" alt="logo">
             </ul>
         </section>
         </nav>
     </header>
     <h1 class="titulo">Querés hacer un pedido especial?</h1>
+
+    <div class="container">
+        <section id="video" class="videoContainer">
+          <video src="../images/amigos.mp4" autoplay muted loop></video>
+        </section>
+      </div>
     
     <h3 class="titulo">Dejanos un mensaje y nos contactaremos!</h3>
     <br>
     <div class="container">
-        <form action="action_page.php">
+        <form id="form">
       
           <label for="name">Nombre y Apellido</label>
           <input type="text" id="name" name="name" placeholder="Nombre y Apellido">
-      
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email@email.com">
-             
+                  
           <label for="country">País</label>
           <select id="country" name="country">
             <option value="Argentina">Argentina</option>

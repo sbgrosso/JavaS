@@ -1,6 +1,10 @@
 
 
-    class Cerveza {
+   
+
+
+   
+   class Cerveza {
         constructor(nombre, tipo, precio, cantidad) {
             this.nombre = nombre;
             this.tipo = tipo;
@@ -13,26 +17,12 @@
 arrayCerveza.push(new Cerveza ('Amundsen','Apa',300,40));     
 arrayCerveza.push(new Cerveza ('Cape Point','Apa',450,20));
 arrayCerveza.push(new Cerveza ('Collective Arts','Apa',360,18));
+arrayCerveza.push(new Cerveza ('Ocho','Ipa',420,10));
+arrayCerveza.push(new Cerveza ('Ey Bro','Lager',280,50));
+arrayCerveza.push(new Cerveza ('Polar Monkeys','Apa',480,15));
 console.log (arrayCerveza); 
     
       
-    do{
-        var continuar = prompt('Desea comprar? Ingrese si o no');
-        if (continuar === "no"){
-        break;
-    }
-    else {
-        var nombreelegido = prompt('Ingrese el nombre de la cerveza elegida');
-        var cantidadelegida = prompt('Ingrese la cantidad de latas que desea');
-        var productoingresado = arrayCerveza.filter(Cerveza=>Cerveza.nombre.includes(nombreelegido));
-        console.log (productoingresado);
-        for (var producto of productoingresado)
-        {alert("su precio a pagar es " + (Cerveza.precio))}
-  
-     
-    }
-    }while (continuar!="no"); 
-
 // Variables
 const baseDeDatos = [
     {
@@ -54,8 +44,29 @@ const baseDeDatos = [
         nombre: 'Collective Arts',
         precio: 360,
         imagen: './images/9665327_400.png'
-    }
+    },
 
+    
+    {
+        id: 4,
+        nombre: 'Ocho',
+        precio: 420,
+        imagen: './images/8_400.png'
+    },
+
+        {
+        id: 5,
+        nombre: 'Ey Bro',
+        precio: 280,
+        imagen: './images/ey_400.png'
+    },
+
+    {
+        id: 6,
+        nombre: 'Polar Monkeys',
+        precio: 480,
+        imagen: './images/mono_400.png'
+    }
 
 ];
 
@@ -106,7 +117,7 @@ function renderizarProductos() {
 }
 
 /**
- * Add ´producto
+ * producto
  */
 function anyadirProductoAlCarrito(evento) {
       carrito.push(evento.target.getAttribute('marcador'))
@@ -144,7 +155,7 @@ function renderizarCarrito() {
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
         miBoton.addEventListener('click', borrarItemCarrito);
-        // Mezclamos nodos
+        // nodos
         miNodo.appendChild(miBoton);
         DOMcarrito.appendChild(miNodo);
     });
@@ -168,7 +179,7 @@ function borrarItemCarrito(evento) {
 
 
 function calcularTotal() {
-ito 
+ 
     return carrito.reduce((total, item) => {
         
         const miItem = baseDeDatos.filter((itemBaseDatos) => {
@@ -188,7 +199,9 @@ function vaciarCarrito() {
 }
 
 
+
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+
 
 
 renderizarProductos();
